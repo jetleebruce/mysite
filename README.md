@@ -1,3 +1,8 @@
+## 🚀 Tailwind setup 
+
+https://paulrcook.com/gatsby-tailwind-emotion
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
