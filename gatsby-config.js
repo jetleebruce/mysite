@@ -1,20 +1,12 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Gatsby Tailwind CSS + Emotion Starter`,
+    description: `A bare-bones Tailwind CSS + Emotion starter to kickoff your project. `,
+    author: `@pauloelias`,
+  },
   plugins: [
-    `gatsby-plugin-postcss`,
     `gatsby-plugin-emotion`,
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: true,
-        tailwind: true,
-      },
-    },
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-react-helmet`,
   ],
 }

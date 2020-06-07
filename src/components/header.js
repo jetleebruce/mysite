@@ -1,9 +1,9 @@
 import React from "react"
 
-import tw from "tailwind.macro"
+import tw from "twin.macro"
 
 const Nav = tw.nav`
-flex items-center justify-between flex-wrap bg-teal-500 p-6 m-0
+flex items-center justify-between flex-wrap p-6 m-0
 `
 const Logo = tw.div`
 flex items-center flex-shrink-0 text-white mr-6
@@ -30,19 +30,19 @@ text-sm lg:flex-grow
 
 const Header = () => {
   return (
-    <Nav>
-      <Logo>
+    <Nav style={{backgroundColor: `pink`}}>
+      {/* <Logo>
         <LogoText>Modin Serge</LogoText>
-      </Logo>
-      <Burger >
-        <BurgerIcon >
+      </Logo> */}
+      <Burger>
+        <BurgerIcon>
           <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </BurgerIcon>
       </Burger>
-      <MenuWrapper >
+      <MenuWrapper>
         <Menu>
           <a
             href="#responsive-header"
