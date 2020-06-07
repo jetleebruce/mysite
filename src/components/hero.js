@@ -2,7 +2,8 @@ import React from "react"
 import tw from "twin.macro"
 import { motion } from "framer-motion"
 
-// import background from "../../static/react.png"
+import reactIcon from "../images/react.png"
+import githubIcon from '../images/github.png'
 
 const logos = [
   {
@@ -82,17 +83,18 @@ const Hero = () => {
       </Col>
       <Col>
         <Logos>
-          {logos &&
-            logos.map(({ name, logo }, index) => (
-              <Icon
-                style={{width: `11rem`, height: `auto`}}
-                transition={{ type: "spring", stiffness: 60, damping: 30 }}
-                animate={{ scale: 0.5 }}
-                src={logo}
-                alt={`${name} Logo`}
-                key={index}
-              />
-            ))}
+          <Icon
+            style={{ width: `11rem`, height: `auto` }}
+            transition={{ type: "spring", stiffness: 60, damping: 30 }}
+            animate={{ scale: 0.5 }}
+            src={reactIcon}
+          />
+          <Icon
+            style={{ width: `11rem`, height: `auto`, color: `white` }}
+            transition={{ type: "spring", stiffness: 60, damping: 30 }}
+            animate={{ scale: 0.5 }}
+            src={githubIcon}
+          />
         </Logos>
       </Col>
     </HeroWrapper>
