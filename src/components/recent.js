@@ -1,26 +1,35 @@
 import React from "react"
+import { Link } from "gatsby"
 import tw from "twin.macro"
 import { motion } from "framer-motion"
 
 import background from "../images/re.png"
 
-import background2 from "../images/2.jpg"
+import onk from "../images/onk.png"
+import webpage from "../images/webpage.png"
+import luk from "../images/luk.png"
 
 const RecentWrapper = tw.div`
 w-full
 `
 const HeaderWrapper = tw.div`
-w-full 
+w-full flex justify-center
 `
 const CardWrapper = tw.div`
-w-full grid grid-cols-3
+w-full grid grid-cols-2
 `
 
 const Card = tw.div`
-max-w-sm rounded overflow-hidden shadow-lg
+max-w-sm rounded overflow-hidden 
 `
 const Icon = tw(motion.img)`
    
+`
+const CardText = tw.div`
+w-full
+`
+const CardButton = tw.button`
+mt-6 rounded-full
 `
 
 const Recent = (props) => {
@@ -37,28 +46,131 @@ const Recent = (props) => {
       <HeaderWrapper>
         <h2
           style={{
-            fontFamily: `PT Sans sans-serif`,
-            fontWeight: `300`,
             fontSize: `2.5rem`,
             color: `#ffffff`,
-            paddingLeft: `10rem`,
+            textTransform: `uppercase`,
           }}
         >
           Recent works
         </h2>
       </HeaderWrapper>
-      <CardWrapper style={{ padding: `5rem`, gridGap: `0.85em` }}>
-        <Card style={{ height: `25rem` }}>
-          <p style={{ color: `white`, position: `absolute` }}>gfhfhjgjk</p>
-          <Icon style={{ height: `100%`, width: `auto` }} src={background2} />
-        </Card>
-        <Card style={{ height: `25rem` }}>
-          <Icon style={{ height: `2.5rem`, width: `auto` }} src={background} />
-        </Card>
-        <Card style={{ height: `25rem` }}>
-          <Icon style={{ height: `2.5rem`, width: `auto` }} src={background} />
+
+      <CardWrapper style={{ padding: `5rem`, gridGap: `3.55em` }}>
+        <Link to="https://citronium.ru/case/lukojl/">
+          <Icon src={luk} />
+        </Link>
+
+        <Card>
+          <CardText>
+            <h2
+              style={{
+                color: `#ffffff`,
+                textTransform: `uppercase`,
+                fontSize: `1.5rem`,
+              }}
+            >
+              Верстка страницы
+            </h2>
+            <ul style={{ color: `#ffffff`, marginTop: `1.5rem` }}>
+              <li>HTML, CSS, Wordpress </li>
+              <li>Aдаптивная верстка </li>
+            </ul>
+          </CardText>
+          <Link to="https://citronium.ru/case/lukojl/">
+            <CardButton
+              style={{
+                border: `1px solid #ffffff`,
+                padding: `0.7rem `,
+                color: `#ffffff`,
+              }}
+            >
+              Подробнее
+            </CardButton>
+          </Link>
         </Card>
       </CardWrapper>
+      <CardWrapper style={{ padding: `5rem`, gridGap: `3.55em` }}>
+        <Link to="https://www.webpageperformance.ru/">
+          <Icon src={webpage} />
+        </Link>
+
+        <Card>
+          <CardText>
+            <h2
+              style={{
+                color: `#ffffff`,
+                textTransform: `uppercase`,
+                fontSize: `1.5rem`,
+              }}
+            >
+              Верстка страницы
+            </h2>
+            <ul style={{ color: `#ffffff`, marginTop: `1.5rem` }}>
+              <li>HTML, CSS, JQuery</li>
+              <li>Aдаптивная верстка </li>
+            </ul>
+          </CardText>
+          <Link to="https://www.webpageperformance.ru/">
+            <CardButton
+              style={{
+                border: `1px solid #ffffff`,
+                padding: `0.7rem `,
+                color: `#ffffff`,
+              }}
+            >
+              Подробнее
+            </CardButton>
+          </Link>
+        </Card>
+      </CardWrapper>
+
+      <CardWrapper style={{ padding: `5rem`, gridGap: `3.55em` }}>
+        <Link to="https://www.webpageperformance.ru/">
+          <Icon src={onk} />
+        </Link>
+
+        <Card>
+          <CardText>
+            <h2
+              style={{
+                color: `#ffffff`,
+                textTransform: `uppercase`,
+                fontSize: `1.5rem`,
+              }}
+            >
+              Создание PWA приложения
+            </h2>
+            <ul style={{ color: `#ffffff`, marginTop: `1.5rem` }}>
+              <li>Gatsby JS, TypeScript</li>
+              <li>CMS реалиована на Wordpress </li>
+              <li>Google Maps</li>
+              <li>PWA</li>
+            </ul>
+          </CardText>
+          <Link to="https://www.webpageperformance.ru/">
+            <CardButton
+              style={{
+                border: `1px solid #ffffff`,
+                padding: `0.7rem `,
+                color: `#ffffff`,
+              }}
+            >
+              Подробнее
+            </CardButton>
+          </Link>
+        </Card>
+      </CardWrapper>
+      <HeaderWrapper>
+        <h2
+          style={{
+            fontSize: `1.2rem`,
+            color: `#ffffff`,
+            textTransform: `uppercase`,
+          }}
+        >
+          Recent works
+        </h2>
+      </HeaderWrapper>
     </RecentWrapper>
   )
 }

@@ -85,16 +85,17 @@ const Hero = () => {
         <Logos>
           <Icon
             style={{ width: `11rem`, height: `auto` }}
-            transition={{ type: "spring", stiffness: 60, damping: 30 }}
-            animate={{ scale: 0.5 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             src={reactIcon}
           />
           <Icon
             style={{ width: `11rem`, height: `auto`, color: `white` }}
-            transition={{ type: "spring", stiffness: 60, damping: 30 }}
+            transition={{ ease: "easeOut", duration: 0.4 }}
             animate={{ scale: 0.5 }}
             src={githubIcon}
           />
+          
         </Logos>
       </Col>
     </HeroWrapper>
