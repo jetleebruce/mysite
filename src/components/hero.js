@@ -3,7 +3,7 @@ import tw from "twin.macro"
 import { motion } from "framer-motion"
 
 import reactIcon from "../images/react.png"
-import githubIcon from '../images/github.png'
+import githubIcon from "../images/github.png"
 
 const logos = [
   {
@@ -46,7 +46,7 @@ const Hero = () => {
       <Col>
         <TextHero
           style={{
-            fontFamily: `PT Sans sans-serif`,
+            // fontFamily: `PT Sans sans-serif`,
             fontWeight: `700`,
             fontSize: `5rem`,
             color: `#ffffff`,
@@ -58,7 +58,7 @@ const Hero = () => {
         </TextHero>
         <TextHero
           style={{
-            fontFamily: `PT Sans sans-serif`,
+            // fontFamily: `PT Sans sans-serif`,
             fontSize: `2rem`,
             color: `#ffffff`,
           }}
@@ -69,17 +69,30 @@ const Hero = () => {
         </TextHero>
         <TextQuote
           style={{
-            fontFamily: `PT Sans sans-serif`,
+            // fontFamily: `PT Sans sans-serif`,
             fontSize: `1.2rem`,
             color: `#ffffff`,
             fontWeight: `300`,
             padding: `1rem 6rem`,
           }}
         >
-          Passionate about everything related to web development.<br></br> Love
-          JAM stack.<br></br> In the process of non-stop learning in the coding
-          world.
+          Passionate about everything related to web development.<br></br>
+          JAM stack fan.<br></br> In the process of non-stop learning in the
+          coding world.
         </TextQuote>
+        <div style={{ width: `60%` }}>
+          <Icon
+            style={{
+              width: `8rem`,
+              height: `auto`,
+              color: `white`,
+              justifyItems: `start`,
+            }}
+            transition={{ ease: "easeOut", duration: 0.4 }}
+            animate={{ scale: 0.5 }}
+            src={githubIcon}
+          />
+        </div>
       </Col>
       <Col>
         <Logos>
@@ -89,13 +102,6 @@ const Hero = () => {
             whileTap={{ scale: 0.9 }}
             src={reactIcon}
           />
-          <Icon
-            style={{ width: `11rem`, height: `auto`, color: `white` }}
-            transition={{ ease: "easeOut", duration: 0.4 }}
-            animate={{ scale: 0.5 }}
-            src={githubIcon}
-          />
-          
         </Logos>
       </Col>
     </HeroWrapper>

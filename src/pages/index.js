@@ -7,6 +7,7 @@ import github from "../images/github.svg"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Recent from "../components/recent"
+import Techs from '../components/techs'
 
 // const logos = [
 //   {
@@ -60,6 +61,7 @@ const Home = () => (
     <Layout>
       <Hero />
       <Recent />
+      <Techs/>
       {/* <Wrapper> 
     <SEO title="Home" />
     <Main>

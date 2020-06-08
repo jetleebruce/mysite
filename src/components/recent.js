@@ -9,6 +9,7 @@ import onk from "../images/onk.png"
 import webpage from "../images/webpage.png"
 import luk from "../images/luk.png"
 
+
 const RecentWrapper = tw.div`
 w-full
 `
@@ -51,9 +52,46 @@ const Recent = (props) => {
             textTransform: `uppercase`,
           }}
         >
-          Recent works
+          Недавние работы
         </h2>
       </HeaderWrapper>
+
+      <CardWrapper style={{ padding: `5rem`, gridGap: `3.55em` }}>
+        <Link to="https://mystifying-snyder-a361aa.netlify.app/">
+          <Icon src={onk} />
+        </Link>
+
+        <Card>
+          <CardText>
+            <h2
+              style={{
+                color: `#ffffff`,
+                textTransform: `uppercase`,
+                fontSize: `1.5rem`,
+              }}
+            >
+              Создание PWA приложения
+            </h2>
+            <ul style={{ color: `#ffffff`, marginTop: `1.5rem` }}>
+              <li>Gatsby JS, TypeScript</li>
+              <li>CMS - Wordpress </li>
+              <li>Google Maps</li>
+              <li>PWA</li>
+            </ul>
+          </CardText>
+          <Link to="https://mystifying-snyder-a361aa.netlify.app/">
+            <CardButton
+              style={{
+                border: `1px solid #ffffff`,
+                padding: `0.7rem `,
+                color: `#ffffff`,
+              }}
+            >
+              Подробнее
+            </CardButton>
+          </Link>
+        </Card>
+      </CardWrapper>
 
       <CardWrapper style={{ padding: `5rem`, gridGap: `3.55em` }}>
         <Link to="https://citronium.ru/case/lukojl/">
@@ -124,42 +162,6 @@ const Recent = (props) => {
         </Card>
       </CardWrapper>
 
-      <CardWrapper style={{ padding: `5rem`, gridGap: `3.55em` }}>
-        <Link to="https://www.webpageperformance.ru/">
-          <Icon src={onk} />
-        </Link>
-
-        <Card>
-          <CardText>
-            <h2
-              style={{
-                color: `#ffffff`,
-                textTransform: `uppercase`,
-                fontSize: `1.5rem`,
-              }}
-            >
-              Создание PWA приложения
-            </h2>
-            <ul style={{ color: `#ffffff`, marginTop: `1.5rem` }}>
-              <li>Gatsby JS, TypeScript</li>
-              <li>CMS реалиована на Wordpress </li>
-              <li>Google Maps</li>
-              <li>PWA</li>
-            </ul>
-          </CardText>
-          <Link to="https://www.webpageperformance.ru/">
-            <CardButton
-              style={{
-                border: `1px solid #ffffff`,
-                padding: `0.7rem `,
-                color: `#ffffff`,
-              }}
-            >
-              Подробнее
-            </CardButton>
-          </Link>
-        </Card>
-      </CardWrapper>
       <HeaderWrapper>
         <h2
           style={{
@@ -168,7 +170,7 @@ const Recent = (props) => {
             textTransform: `uppercase`,
           }}
         >
-          Recent works
+          Больше работ
         </h2>
       </HeaderWrapper>
     </RecentWrapper>
