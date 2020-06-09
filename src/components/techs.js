@@ -6,14 +6,14 @@ import { motion } from "framer-motion"
 import gif from "../images/3.gif"
 
 const TechsWrapper = tw.div`
-w-full
+w-full 
 `
 const HeaderWrapper = tw.div`
-w-full flex justify-center
+w-full flex justify-center text-3xl pb-8
 `
 
 const CardWrapper = tw.div`
-w-full grid grid-cols-2
+w-full grid grid-cols-1
 `
 const Card = tw.div`
  rounded overflow-hidden 
@@ -32,7 +32,7 @@ const Techs = () => (
   <TechsWrapper
     style={{
       backgroundColor: `#141414`,
-      margin: `0 auto 0 auto`,
+     
       maxWidth: `1680px`,
       padding: `0 1.0875rem 6rem`,
       position: `relative`,
@@ -41,7 +41,6 @@ const Techs = () => (
     <HeaderWrapper>
       <h2
         style={{
-          fontSize: `2.5rem`,
           color: `#ffffff`,
           textTransform: `uppercase`,
         }}
@@ -49,7 +48,7 @@ const Techs = () => (
         технологии
       </h2>
     </HeaderWrapper>
-    <CardWrapper style={{ padding: `5rem`, gridGap: `3.55em` }}>
+    <CardWrapper style={{  gridGap: `3.55em` }}>
       <Link to="https://citronium.ru/case/lukojl/">
         <Icon src={gif} />
       </Link>
