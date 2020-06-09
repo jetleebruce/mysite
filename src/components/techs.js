@@ -9,7 +9,7 @@ const TechsWrapper = tw.div`
 w-full 
 `
 const HeaderWrapper = tw.div`
-w-full flex justify-center text-3xl pb-8
+w-full flex justify-center text-3xl pb-8 text-3xl
 `
 
 const CardWrapper = tw.div`

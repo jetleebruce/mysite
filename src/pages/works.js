@@ -17,13 +17,13 @@ const WorksWrapper = tw.div`
 flex w-full flex-col
 `
 const HeaderWrapper = tw.div`
-w-full flex justify-center justify-start
+w-full flex justify-center pb-8 pt-8 text-3xl
 `
 const CardWrapper = tw.div`
-w-full grid grid-cols-2
+w-full grid grid-cols-1 
 `
 const Card = tw.div`
- rounded overflow-hidden 
+ rounded overflow-hidden p-4
 `
 const Icon = tw(motion.img)`
    
@@ -32,10 +32,9 @@ const Icon = tw(motion.img)`
 const Works = () => (
   <Layout>
     <WorksWrapper style={{ backgroundColor: `#141414` }}>
-      <HeaderWrapper style={{ marginTop: `5rem`, marginLeft: `5rem` }}>
+      <HeaderWrapper>
         <h2
           style={{
-            fontSize: `2.5rem`,
             color: `#ffffff`,
             textTransform: `uppercase`,
           }}
@@ -45,33 +44,32 @@ const Works = () => (
       </HeaderWrapper>
 
       <CardWrapper>
-        <Card style={{ padding: `4rem` }}>
+        <Card>
           <Link to="https://citronium.ru/case/lukojl/">
             <Icon src={luk} />
           </Link>
         </Card>
-        <Card style={{ padding: `4rem` }}>
+        <Card>
           <Link to="https://www.webpageperformance.ru/">
             <Icon src={webpage} />
           </Link>
         </Card>
       </CardWrapper>
       <CardWrapper>
-        <Card style={{ padding: `4rem` }}>
+        <Card>
           <Link to="https://citronium.ru/case/swipewise/">
             <Icon src={swipe} />
           </Link>
         </Card>
-        <Card style={{ padding: `4rem` }}>
+        <Card>
           <Link to="https://citronium.ru/case/fizionom-new/">
             <Icon src={fizionom} />
           </Link>
         </Card>
       </CardWrapper>
-      <HeaderWrapper style={{ marginTop: `5rem`, marginLeft: `5rem` }}>
+      <HeaderWrapper>
         <h2
           style={{
-            fontSize: `2.5rem`,
             color: `#ffffff`,
             textTransform: `uppercase`,
           }}
@@ -81,12 +79,12 @@ const Works = () => (
       </HeaderWrapper>
 
       <CardWrapper>
-        <Card style={{ padding: `4rem` }}>
+        <Card>
           <Link to="https://mystifying-snyder-a361aa.netlify.app/">
             <Icon src={onk} />
           </Link>
         </Card>
-        <Card style={{ padding: `4rem` }}>
+        <Card>
           <Link to="https://manandlaw.info/">
             <Icon src={manlaw} />
           </Link>
@@ -94,12 +92,12 @@ const Works = () => (
       </CardWrapper>
 
       <CardWrapper>
-        <Card style={{ padding: `4rem` }}>
+        <Card>
           <Link to="http://dentalstudia12.ru/">
             <Icon src={dental} />
           </Link>
         </Card>
-        <Card style={{ padding: `4rem` }}>
+        <Card>
           <Link to="https://manandlaw.info/">
             <Icon src={manlaw} />
           </Link>
