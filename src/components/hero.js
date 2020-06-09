@@ -15,19 +15,22 @@ const ColR = tw.div`
 pt-24
 `
 const ColL = tw.div`
-pt-8
+pt-8 
 `
 const TextHero = tw(motion.span)`
-pt-8 flex justify-center
+pt-8 pl-16 flex justify-center
 `
 
 const TextQuote = tw(motion.p)`
-flex justify-center
+p-8 flex justify-center
 `
 const TextSub = tw(motion.p)`
  pb-8 flex justify-center
 `
 const Icon = tw(motion.img)`
+   
+`
+const IconGit = tw(motion.div)`
    
 `
 
@@ -76,21 +79,21 @@ const Hero = () => {
           JAM stack fan.<br></br> In the process of non-stop learning in the
           coding world.
         </TextQuote>
-        <div style={{ height: `1rem` }}>
+        <IconGit>
           <Link to="https://github.com/jetleebruce">
             <Icon
               style={{
                 width: `8rem`,
                 height: `auto`,
                 color: `white`,
-                justifyItems: `start`,
+                
               }}
               transition={{ ease: "easeOut", duration: 0.4 }}
               animate={{ scale: 0.5 }}
               src={githubIcon}
             />
           </Link>
-        </div>
+        </IconGit>
       </ColL>
       <ColR style={{ display: `flex`, flexDirection: `row` }}>
         <Logos>
