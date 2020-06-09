@@ -72,8 +72,7 @@ const Hero = () => {
               fontSize:`1rem`,
               color: `#ffffff`,
               fontWeight: `300`,
-              display:`flex`,
-              justifyContent:`center`
+             
             }}
           >
             Passionate about everything related to web development.<br></br>
