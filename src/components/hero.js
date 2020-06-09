@@ -16,12 +16,12 @@ pt-16
 const ColL = tw.div`
 pt-8
 `
-const TextHero = tw(motion.span)`
+const TextHero = tw(motion.p)`
 pt-8 pl-16 flex justify-center
 `
 
 const TextQuote = tw(motion.p)`
-p-8 flex justify-center
+p-8 flex justify-center text-xl
 `
 const TextSub = tw(motion.p)`
  pb-8 flex justify-center
@@ -68,10 +68,9 @@ const Hero = () => {
         <TextQuote
           style={{
             // fontFamily: `PT Sans sans-serif`,
-            fontSize: `1.2rem`,
+
             color: `#ffffff`,
             fontWeight: `300`,
-            paddingTop: `1rem`,
           }}
         >
           Passionate about everything related to web development.<br></br>
