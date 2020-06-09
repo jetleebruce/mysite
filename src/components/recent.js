@@ -3,8 +3,6 @@ import { Link } from "gatsby"
 import tw from "twin.macro"
 import { motion } from "framer-motion"
 
-import background from "../images/re.png"
-
 import onk from "../images/onk.png"
 import webpage from "../images/webpage.png"
 import luk from "../images/luk.png"
@@ -13,7 +11,7 @@ const RecentWrapper = tw.div`
 w-full
 `
 const HeaderWrapper = tw.div`
-w-full flex justify-center text-3xl pt-12
+w-full flex justify-center text-3xl pt-12 pb-8
 `
 const CardWrapper = tw.div`
 w-full grid grid-cols-1 pt-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2
@@ -23,13 +21,13 @@ const Card = tw.div`
 max-w-sm rounded overflow-hidden 
 `
 const Icon = tw(motion.img)`
-   
+   p-8
 `
 const CardText = tw.div`
-w-full text-xl
+w-full text-xl p-8
 `
 const CardButton = tw.button`
-mt-6 rounded-full p-2
+mt-6 ml-6 rounded-full p-2
 `
 
 const Recent = (props) => {
@@ -61,7 +59,13 @@ const Recent = (props) => {
             >
               Создание PWA приложения
             </p>
-            <ul style={{ color: `#ffffff`, marginTop: `1.5rem` }}>
+            <ul
+              style={{
+                color: `#ffffff`,
+                marginTop: `1.5rem`,
+                fontWeight: `300`,
+              }}
+            >
               <li>Gatsby JS, TypeScript</li>
               <li>CMS - Wordpress </li>
               <li>Google Maps</li>
@@ -97,7 +101,13 @@ const Recent = (props) => {
             >
               Верстка страницы
             </h2>
-            <ul style={{ color: `#ffffff`, marginTop: `1.5rem` }}>
+            <ul
+              style={{
+                color: `#ffffff`,
+                marginTop: `1.5rem`,
+                fontWeight: `300`,
+              }}
+            >
               <li>HTML, CSS, Wordpress </li>
               <li>Aдаптивная верстка </li>
             </ul>
@@ -131,7 +141,13 @@ const Recent = (props) => {
             >
               Верстка страницы
             </h2>
-            <ul style={{ color: `#ffffff`, marginTop: `1.5rem` }}>
+            <ul
+              style={{
+                color: `#ffffff`,
+                marginTop: `1.5rem`,
+                fontWeight: `300`,
+              }}
+            >
               <li>HTML, CSS, JQuery</li>
               <li>Aдаптивная верстка </li>
             </ul>
