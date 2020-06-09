@@ -21,7 +21,7 @@ pt-8 pl-16 flex justify-center
 `
 
 const TextQuote = tw(motion.p)`
-p-8 flex justify-center text-base
+p-8 flex justify-center text-xl xl:text-base
 `
 const TextSub = tw(motion.p)`
  pb-8 flex justify-center
