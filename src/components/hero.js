@@ -5,8 +5,7 @@ import { motion } from "framer-motion"
 
 import reactIcon from "../images/react.png"
 import githubIcon from "../images/github.png"
-import tailwind from "../images/tailwind.svg"
-import js from "../images/jss.svg"
+
 
 const HeroWrapper = tw.div`
  w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2
@@ -21,7 +20,7 @@ const TextHero = tw(motion.span)`
 pt-8 pl-16 flex justify-center
 `
 
-const TextQuote = tw(motion.p)`
+const TextQuote = tw(motion.span)`
 p-8 flex justify-center
 `
 const TextSub = tw(motion.p)`
