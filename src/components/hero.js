@@ -65,16 +65,18 @@ const Hero = () => {
             Front End Developer
           </p>
         </TextSub>
-        <TextQuote
-          style={{
-            // fontFamily: `PT Sans sans-serif`,
-            color: `#ffffff`,
-            fontWeight: `300`,
-          }}
-        >
-          Passionate about everything related to web development.<br></br>
-          JAM stack fan.<br></br> In the process of non-stop learning in the
-          coding world.
+        <TextQuote>
+          <p
+            style={{
+              // fontFamily: `PT Sans sans-serif`,
+              color: `#ffffff`,
+              fontWeight: `300`,
+            }}
+          >
+            Passionate about everything related to web development.<br></br>
+            JAM stack fan.<br></br> In the process of non-stop learning in the
+            coding world.
+          </p>
         </TextQuote>
         <IconGit>
           <Link to="https://github.com/jetleebruce">
