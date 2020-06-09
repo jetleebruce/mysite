@@ -8,13 +8,13 @@ import githubIcon from "../images/github.png"
 import js from "../images/jss.svg"
 
 const HeroWrapper = tw.div`
- w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2
+ w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xl:h-screen
 `
 const ColR = tw.div`
 pt-16
 `
 const ColL = tw.div`
-pt-8
+pt-8 sm:pt-8 md:pt-16 lg:pt-48 xl:pt-48
 `
 const TextHero = tw(motion.p)`
 pt-8 pl-16 flex justify-center
