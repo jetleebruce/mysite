@@ -21,7 +21,7 @@ pt-8 pl-16 flex justify-center
 `
 
 const TextQuote = tw(motion.p)`
-p-8 flex justify-center text-xl xl:text-base p-8 justify-center
+p-8 flex justify-center text-base sm:text-base md:text-base lg:text-base xl:text-base
 `
 const TextSub = tw(motion.p)`
  pb-8 flex justify-center
@@ -68,7 +68,6 @@ const Hero = () => {
         <TextQuote
           style={{
             // fontFamily: `PT Sans sans-serif`,
-
             color: `#ffffff`,
             fontWeight: `300`,
           }}
