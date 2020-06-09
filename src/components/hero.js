@@ -20,7 +20,7 @@ const TextHero = tw(motion.p)`
 pt-8 pl-16 flex justify-center
 `
 
-const TextQuote = tw(motion.p)`
+const TextQuote = tw(motion.div)`
 p-8 flex justify-center 
 `
 const TextSub = tw(motion.p)`
@@ -72,6 +72,8 @@ const Hero = () => {
               fontSize:`1rem`,
               color: `#ffffff`,
               fontWeight: `300`,
+              display:`flex`,
+              justifyContent:`center`
             }}
           >
             Passionate about everything related to web development.<br></br>
