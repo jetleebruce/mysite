@@ -16,7 +16,7 @@ const HeaderWrapper = tw.div`
 w-full flex justify-center text-3xl pt-12
 `
 const CardWrapper = tw.div`
-w-full grid grid-cols-1 pt-8 md:grid-cols-2
+w-full grid grid-cols-1 pt-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2
 `
 
 const Card = tw.div`
@@ -38,7 +38,6 @@ const Recent = (props) => {
       style={{
         backgroundColor: `#141414`,
         margin: `0 auto 0 auto`,
-        maxWidth: `1680px`,
         padding: `0 1.0875rem 6rem`,
         position: `relative`,
       }}
@@ -116,7 +115,7 @@ const Recent = (props) => {
           </Link>
         </Card>
       </CardWrapper>
-      <CardWrapper style={{  gridGap: `3.55em` }}>
+      <CardWrapper style={{ gridGap: `3.55em` }}>
         <Link to="https://www.webpageperformance.ru/">
           <Icon src={webpage} />
         </Link>

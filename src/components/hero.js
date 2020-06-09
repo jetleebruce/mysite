@@ -9,7 +9,7 @@ import tailwind from "../images/tailwind.svg"
 import js from "../images/jss.svg"
 
 const HeroWrapper = tw.div`
- w-full grid grid-cols-1 md:grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2
+ w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2
 `
 const ColR = tw.div`
 pt-16
@@ -31,7 +31,7 @@ const Icon = tw(motion.img)`
    
 `
 const IconGit = tw(motion.div)`
-   
+  flex justify-center 
 `
 
 const Logos = tw.div`
@@ -84,9 +84,6 @@ const Hero = () => {
             <Icon
               style={{
                 width: `8rem`,
-                height: `auto`,
-                color: `white`,
-                
               }}
               transition={{ ease: "easeOut", duration: 0.4 }}
               animate={{ scale: 0.5 }}

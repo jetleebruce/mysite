@@ -13,7 +13,7 @@ w-full flex justify-center text-3xl pb-8 text-3xl
 `
 
 const CardWrapper = tw.div`
-w-full grid grid-cols-1
+w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 
 `
 const Card = tw.div`
  rounded overflow-hidden 
@@ -32,8 +32,6 @@ const Techs = () => (
   <TechsWrapper
     style={{
       backgroundColor: `#141414`,
-     
-      maxWidth: `1680px`,
       padding: `0 1.0875rem 6rem`,
       position: `relative`,
     }}
@@ -48,7 +46,7 @@ const Techs = () => (
         технологии
       </h2>
     </HeaderWrapper>
-    <CardWrapper style={{  gridGap: `3.55em` }}>
+    <CardWrapper style={{ gridGap: `3.55em` }}>
       <Link to="https://citronium.ru/case/lukojl/">
         <Icon src={gif} />
       </Link>
@@ -116,7 +114,7 @@ const Techs = () => (
               marginBottom: `0.5rem`,
             }}
           >
-           WordPress
+            WordPress
           </h2>
         </CardText>
       </Card>
