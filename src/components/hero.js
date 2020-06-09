@@ -1,37 +1,31 @@
 import React from "react"
+import { Link } from "gatsby"
 import tw from "twin.macro"
 import { motion } from "framer-motion"
 
 import reactIcon from "../images/react.png"
 import githubIcon from "../images/github.png"
-
-const logos = [
-  {
-    name: "gatsby",
-    logo: require("../images/re.png"),
-  },
-  {
-    name: "react",
-    logo: require("../images/emotion.png"),
-  },
-  {
-    name: "tailwind",
-    logo: require("../images/tailwind.svg"),
-  },
-]
+import tailwind from "../images/tailwind.svg"
+import js from "../images/jss.svg"
 
 const HeroWrapper = tw.div`
- flex w-full h-screen
+ w-full grid grid-cols-1 md:grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2
 `
-const Col = tw.div`
-w-1/2 flex flex-col items-center justify-center
+const ColR = tw.div`
+pt-24
+`
+const ColL = tw.div`
+pt-8
 `
 const TextHero = tw(motion.span)`
-
+pt-8 flex justify-center
 `
 
 const TextQuote = tw(motion.p)`
-
+flex justify-center
+`
+const TextSub = tw(motion.p)`
+ pb-8 flex justify-center
 `
 const Icon = tw(motion.img)`
    
@@ -43,7 +37,7 @@ const Logos = tw.div`
 const Hero = () => {
   return (
     <HeroWrapper style={{ backgroundColor: `#141414` }}>
-      <Col>
+      <ColL>
         <TextHero
           style={{
             // fontFamily: `PT Sans sans-serif`,
@@ -56,45 +50,49 @@ const Hero = () => {
         >
           Serge Modin
         </TextHero>
-        <TextHero
-          style={{
-            // fontFamily: `PT Sans sans-serif`,
-            fontSize: `2rem`,
-            color: `#ffffff`,
-          }}
-          animate={{ scale: 0.8 }}
-          transition={{ type: "spring", stiffness: 260, damping: 20 }}
-        >
-          Front End Developer
-        </TextHero>
+        <TextSub>
+          <p
+            style={{
+              // fontFamily: `PT Sans sans-serif`,
+              fontSize: `2rem`,
+              color: `#ffffff`,
+            }}
+            animate={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+          >
+            Front End Developer
+          </p>
+        </TextSub>
         <TextQuote
           style={{
             // fontFamily: `PT Sans sans-serif`,
             fontSize: `1.2rem`,
             color: `#ffffff`,
             fontWeight: `300`,
-            padding: `1rem 6rem`,
+            paddingTop: `1rem`,
           }}
         >
           Passionate about everything related to web development.<br></br>
           JAM stack fan.<br></br> In the process of non-stop learning in the
           coding world.
         </TextQuote>
-        <div style={{ width: `60%` }}>
-          <Icon
-            style={{
-              width: `8rem`,
-              height: `auto`,
-              color: `white`,
-              justifyItems: `start`,
-            }}
-            transition={{ ease: "easeOut", duration: 0.4 }}
-            animate={{ scale: 0.5 }}
-            src={githubIcon}
-          />
+        <div style={{ height: `1rem` }}>
+          <Link to="https://github.com/jetleebruce">
+            <Icon
+              style={{
+                width: `8rem`,
+                height: `auto`,
+                color: `white`,
+                justifyItems: `start`,
+              }}
+              transition={{ ease: "easeOut", duration: 0.4 }}
+              animate={{ scale: 0.5 }}
+              src={githubIcon}
+            />
+          </Link>
         </div>
-      </Col>
-      <Col>
+      </ColL>
+      <ColR style={{ display: `flex`, flexDirection: `row` }}>
         <Logos>
           <Icon
             style={{ width: `11rem`, height: `auto` }}
@@ -103,7 +101,15 @@ const Hero = () => {
             src={reactIcon}
           />
         </Logos>
-      </Col>
+        <Logos>
+          <Icon
+            style={{ width: `11rem`, height: `auto` }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            src={js}
+          />
+        </Logos>
+      </ColR>
     </HeroWrapper>
   )
 }

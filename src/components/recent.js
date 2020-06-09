@@ -9,7 +9,6 @@ import onk from "../images/onk.png"
 import webpage from "../images/webpage.png"
 import luk from "../images/luk.png"
 
-
 const RecentWrapper = tw.div`
 w-full
 `
@@ -17,7 +16,7 @@ const HeaderWrapper = tw.div`
 w-full flex justify-center
 `
 const CardWrapper = tw.div`
-w-full grid grid-cols-2
+w-full grid grid-cols-1 md:grid-cols-2
 `
 
 const Card = tw.div`
@@ -45,15 +44,17 @@ const Recent = (props) => {
       }}
     >
       <HeaderWrapper>
-        <h2
-          style={{
-            fontSize: `2.5rem`,
-            color: `#ffffff`,
-            textTransform: `uppercase`,
-          }}
-        >
-          Недавние работы
-        </h2>
+        <Link to="/works">
+          <h2
+            style={{
+              fontSize: `2.5rem`,
+              color: `#ffffff`,
+              textTransform: `uppercase`,
+            }}
+          >
+            Недавние работы
+          </h2>
+        </Link>
       </HeaderWrapper>
 
       <CardWrapper style={{ padding: `5rem`, gridGap: `3.55em` }}>
@@ -163,15 +164,18 @@ const Recent = (props) => {
       </CardWrapper>
 
       <HeaderWrapper>
-        <h2
-          style={{
-            fontSize: `1.2rem`,
-            color: `#ffffff`,
-            textTransform: `uppercase`,
-          }}
-        >
-          Больше работ
-        </h2>
+        <Link to="/works">
+          <h2
+            style={{
+              fontSize: `1.2rem`,
+              color: `#ffffff`,
+              textTransform: `uppercase`,
+              textDecoration: `underline`,
+            }}
+          >
+            Больше работ
+          </h2>
+        </Link>
       </HeaderWrapper>
     </RecentWrapper>
   )

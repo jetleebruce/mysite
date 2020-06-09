@@ -63,6 +63,15 @@ const Techs = () => (
               marginBottom: `0.5rem`,
             }}
           >
+            HTML, CSS (Sass,Tailwind)
+          </h2>
+          <h2
+            style={{
+              color: `#ffffff`,
+              fontSize: `1.2rem`,
+              marginBottom: `0.5rem`,
+            }}
+          >
             React + Redux, Gatsby JS, Next JS
           </h2>
           <h2
@@ -100,6 +109,15 @@ const Techs = () => (
             }}
           >
             Firebase
+          </h2>
+          <h2
+            style={{
+              color: `#ffffff`,
+              fontSize: `1.2rem`,
+              marginBottom: `0.5rem`,
+            }}
+          >
+           WordPress
           </h2>
         </CardText>
       </Card>
