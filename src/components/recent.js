@@ -11,7 +11,7 @@ const RecentWrapper = tw.div`
 w-full
 `
 const HeaderWrapper = tw.div`
-w-full flex justify-center text-3xl pt-12 pb-8
+w-full flex justify-center text-3xl pt-12 pb-8 gap-4 lg:gap-12 xl:gap-12
 `
 const CardWrapper = tw.div`
 w-full grid grid-cols-1 pt-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2
@@ -44,7 +44,7 @@ const Recent = (props) => {
         <Link to="/works">Недавние работы</Link>
       </HeaderWrapper>
 
-      <CardWrapper style={{ gridGap: `3.55em` }}>
+      <CardWrapper>
         <Link to="https://mystifying-snyder-a361aa.netlify.app/">
           <Icon src={onk} />
         </Link>
@@ -85,7 +85,7 @@ const Recent = (props) => {
         </Card>
       </CardWrapper>
 
-      <CardWrapper style={{ gridGap: `3.55em` }}>
+      <CardWrapper>
         <Link to="https://citronium.ru/case/lukojl/">
           <Icon src={luk} />
         </Link>

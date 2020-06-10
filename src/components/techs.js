@@ -13,7 +13,7 @@ w-full flex justify-center text-3xl pb-16
 `
 
 const CardWrapper = tw.div`
-w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 
+w-full grid grid-cols-1 gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-12
 `
 const Card = tw.div`
  rounded overflow-hidden 
@@ -46,7 +46,7 @@ const Techs = () => (
         технологии
       </h2>
     </HeaderWrapper>
-    <CardWrapper style={{ gridGap: `3.55em` }}>
+    <CardWrapper>
       <Link to="https://citronium.ru/case/lukojl/">
         <Icon src={gif} />
       </Link>
