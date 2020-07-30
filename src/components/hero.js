@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 
 import reactIcon from "../images/react.png"
 import githubIcon from "../images/github.png"
+import gatsby from "../images/gatsbyjs.png"
 import js from "../images/jss.svg"
 
 const HeroWrapper = tw.div`
@@ -21,10 +22,10 @@ pt-8 pl-16 flex justify-center
 `
 
 const TextQuote = tw(motion.div)`
-p-1 flex justify-center 
+p-1 sm:p-3 md:p-3 lg:p-4 xl:p-0 flex justify-center 
 `
 const TextSub = tw(motion.p)`
- pb-8 flex justify-center
+pt-6 pb-4 flex justify-center
 `
 const Icon = tw(motion.img)`
    
@@ -80,9 +81,7 @@ const Hero = () => {
               fontWeight: `300`,
             }}
           >
-            Passionate about everything related to web development.<br></br>
-            JAM stack fan.<br></br> In the process of non-stop learning in the
-            coding world.
+            In the process of non-stop learning in the coding world.
           </p>
         </TextQuote>
         <IconGit>
@@ -113,6 +112,14 @@ const Hero = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             src={js}
+          />
+        </Logos>
+        <Logos>
+          <Icon
+            style={{ width: `11rem`, height: `auto` }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            src={gatsby}
           />
         </Logos>
       </ColR>
