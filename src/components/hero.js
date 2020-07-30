@@ -12,17 +12,22 @@ const HeroWrapper = tw.div`
  w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xl:h-screen
 `
 const ColR = tw.div`
-pt-16
+pt-16 p-0 
 `
 const ColL = tw.div`
-pt-8 sm:pt-8 md:pt-16 lg:pt-48 xl:pt-48
+flex items-center flex-col pt-48 sm:pt-48 md:pt-16 lg:pt-48 xl:pt-48
 `
-const TextHero = tw(motion.p)`
-pt-8 pl-16 flex justify-center
+const TextHeroWrapper = tw.div`
+m-0 
 `
 
-const TextQuote = tw(motion.div)`
-p-1 sm:p-3 md:p-3 lg:p-4 xl:p-0 flex justify-center 
+const TextHero = tw(motion.p)`
+mx-4 text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
+`
+
+const TextQuote = tw(
+  motion.div
+)` px-16 sm:p-3 md:p-3 lg:p-4 xl:p-0 flex justify-center 
 `
 const TextSub = tw(motion.p)`
 pt-6 pb-4 flex justify-center
@@ -33,28 +38,32 @@ const Icon = tw(motion.img)`
 const IconGit = tw(motion.div)`
   flex justify-center 
 `
-
+const LogosWrapper = tw.div`
+flex items-center justify-around mb-6 px-16
+`
 const Logos = tw.div`
-   flex items-center justify-around mb-6 px-16`
+   `
 
 const Hero = () => {
   return (
     <HeroWrapper style={{ backgroundColor: `#141414` }}>
       <ColL>
-        <TextHero
-          style={{
-            // fontFamily: `PT Sans sans-serif`,
-            fontWeight: `700`,
-            fontSize: `5rem`,
-            color: `#ffffff`,
-          }}
-          // transition={{ type: "spring", stiffness: 260, damping: 30 }}
-          // animate={{ scale: 0.9 }}
-          animate={{ scale: [0, 0, 0, 1], opacity: [0, 0.3, 0.5, 1] }}
-          transition={{ duration: 2, ease: "linear" }}
-        >
-          Serge Modin
-        </TextHero>
+        <TextHeroWrapper>
+          <TextHero
+            style={{
+              // fontFamily: `PT Sans sans-serif`,
+              fontWeight: `700`,
+              // fontSize: `5rem`,
+              color: `#ffffff`,
+            }}
+            // transition={{ type: "spring", stiffness: 260, damping: 30 }}
+            // animate={{ scale: 0.9 }}
+            animate={{ scale: [0, 0, 0, 1], opacity: [0, 0.3, 0.5, 1] }}
+            transition={{ duration: 2, ease: "linear" }}
+          >
+            Serge Modin
+          </TextHero>
+        </TextHeroWrapper>
         <TextSub
           animate={{ opacity: [0, 0, 0, 1] }}
           transition={{ duration: 4, ease: "linear" }}
@@ -77,11 +86,12 @@ const Hero = () => {
             style={{
               // fontFamily: `PT Sans sans-serif`,
               fontSize: `1.3rem`,
+              padding: `2.5rem`,
               color: `#ffffff`,
               fontWeight: `300`,
             }}
           >
-            In the process of non-stop learning in the coding world.
+            In the process of non-stop learning.
           </p>
         </TextQuote>
         <IconGit>
@@ -98,30 +108,32 @@ const Hero = () => {
         </IconGit>
       </ColL>
       <ColR style={{ display: `flex`, flexDirection: `row` }}>
-        <Logos>
-          <Icon
-            style={{ width: `11rem`, height: `auto` }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            src={reactIcon}
-          />
-        </Logos>
-        <Logos>
-          <Icon
-            style={{ width: `11rem`, height: `auto` }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            src={js}
-          />
-        </Logos>
-        <Logos>
-          <Icon
-            style={{ width: `11rem`, height: `auto` }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            src={gatsby}
-          />
-        </Logos>
+        <LogosWrapper>
+          <Logos>
+            <Icon
+              style={{ width: `11rem`, height: `auto` }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              src={reactIcon}
+            />
+          </Logos>
+          <Logos>
+            <Icon
+              style={{ width: `11rem`, height: `auto` }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              src={js}
+            />
+          </Logos>
+          <Logos>
+            <Icon
+              style={{ width: `11rem`, height: `auto` }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              src={gatsby}
+            />
+          </Logos>
+        </LogosWrapper>
       </ColR>
     </HeroWrapper>
   )
