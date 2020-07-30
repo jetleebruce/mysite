@@ -55,8 +55,8 @@ const Hero = () => {
           Serge Modin
         </TextHero>
         <TextSub
-          animate={{ opacity: [0, 0, 0.5, 1] }}
-          transition={{ duration: 3, ease: "linear" }}
+          animate={{ opacity: [0, 0, 0, 1] }}
+          transition={{ duration: 4, ease: "linear" }}
         >
           <p
             style={{
@@ -68,7 +68,10 @@ const Hero = () => {
             Front End Developer
           </p>
         </TextSub>
-        <TextQuote>
+        <TextQuote
+          animate={{ opacity: [0, 0, 0, 1] }}
+          transition={{ duration: 5, ease: "linear" }}
+        >
           <p
             style={{
               // fontFamily: `PT Sans sans-serif`,
