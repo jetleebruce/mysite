@@ -21,7 +21,7 @@ pt-8 pl-16 flex justify-center
 `
 
 const TextQuote = tw(motion.div)`
-p-8 flex justify-center 
+p-1 flex justify-center 
 `
 const TextSub = tw(motion.p)`
  pb-8 flex justify-center
@@ -47,20 +47,23 @@ const Hero = () => {
             fontSize: `5rem`,
             color: `#ffffff`,
           }}
-          transition={{ type: "spring", stiffness: 260, damping: 30 }}
-          animate={{ scale: 0.9 }}
+          // transition={{ type: "spring", stiffness: 260, damping: 30 }}
+          // animate={{ scale: 0.9 }}
+          animate={{ scale: [0, 0, 0, 1], opacity: [0, 0.3, 0.5, 1] }}
+          transition={{ duration: 2, ease: "linear" }}
         >
           Serge Modin
         </TextHero>
-        <TextSub>
+        <TextSub
+          animate={{ opacity: [0, 0, 0.5, 1] }}
+          transition={{ duration: 3, ease: "linear" }}
+        >
           <p
             style={{
               // fontFamily: `PT Sans sans-serif`,
               fontSize: `2rem`,
               color: `#ffffff`,
             }}
-            animate={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 260, damping: 20 }}
           >
             Front End Developer
           </p>
@@ -69,10 +72,9 @@ const Hero = () => {
           <p
             style={{
               // fontFamily: `PT Sans sans-serif`,
-              fontSize:`1rem`,
+              fontSize: `1.3rem`,
               color: `#ffffff`,
               fontWeight: `300`,
-             
             }}
           >
             Passionate about everything related to web development.<br></br>
