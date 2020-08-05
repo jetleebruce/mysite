@@ -27,10 +27,10 @@ mx-4 text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 
 const TextQuote = tw(
   motion.div
-)` px-16 sm:p-3 md:p-3 lg:p-4 xl:p-0 flex justify-center 
+)` px-16 p-3 sm:p-3 md:p-3 lg:p-4 xl:p-0 flex justify-center 
 `
 const TextSub = tw(motion.p)`
-pt-6 pb-4 flex justify-center
+pt-6 pb-2 w-full flex justify-center
 `
 const Icon = tw(motion.img)`
    
@@ -39,7 +39,7 @@ const IconGit = tw(motion.div)`
   flex justify-center 
 `
 const LogosWrapper = tw.div`
-flex items-center justify-around mb-6 px-16
+flex items-center justify-around w-full mt-8 sm:mt-6 md:mt-6 lg:mt-6 xl:mt-6 px-16
 `
 const Logos = tw.div`
    `
@@ -98,7 +98,7 @@ const Hero = () => {
           <Link to="https://github.com/jetleebruce">
             <Icon
               style={{
-                width: `8rem`,
+                width: `9rem`,
               }}
               transition={{ ease: "easeOut", duration: 0.4 }}
               animate={{ scale: 0.5 }}
@@ -114,6 +114,8 @@ const Hero = () => {
               style={{ width: `11rem`, height: `auto` }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              animate={{ opacity: [0, 0, 0, 1] }}
+              transition={{ duration: 5, ease: "linear" }}
               src={reactIcon}
             />
           </Logos>
@@ -122,6 +124,8 @@ const Hero = () => {
               style={{ width: `11rem`, height: `auto` }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              animate={{ opacity: [0, 0, 0, 1] }}
+              transition={{ duration: 5, ease: "linear" }}
               src={js}
             />
           </Logos>
@@ -130,6 +134,8 @@ const Hero = () => {
               style={{ width: `11rem`, height: `auto` }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              animate={{ opacity: [0, 0, 0, 1] }}
+              transition={{ duration: 5, ease: "linear" }}
               src={gatsby}
             />
           </Logos>
