@@ -15,7 +15,7 @@ const ColR = tw.div`
 pt-16 p-0 
 `
 const ColL = tw.div`
-flex items-center flex-col pt-48 sm:pt-48 md:pt-16 lg:pt-48 xl:pt-48
+flex items-center flex-col pt-16 sm:pt-16 md:pt-24 lg:pt-32 xl:pt-48
 `
 const TextHeroWrapper = tw.div`
 m-0 
@@ -27,7 +27,7 @@ mx-4 text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 
 const TextQuote = tw(
   motion.div
-)` px-16 p-3 sm:p-3 md:p-3 lg:p-4 xl:p-0 flex justify-center 
+)` px-6 sm:p-3 md:p-3 lg:p-4 xl:p-0 flex justify-center 
 `
 const TextSub = tw(motion.p)`
 pt-6 pb-2 w-full flex justify-center
@@ -86,7 +86,7 @@ const Hero = () => {
             style={{
               // fontFamily: `PT Sans sans-serif`,
               fontSize: `1.3rem`,
-              padding: `2.5rem`,
+              // padding: `2.5rem`,
               color: `#ffffff`,
               fontWeight: `300`,
             }}
