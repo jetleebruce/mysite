@@ -46,20 +46,21 @@ const Recent = (props) => {
       </HeaderWrapper>
 
       <CardWrapper>
-        <Link to="https://mystifying-snyder-a361aa.netlify.app/">
-          <Icon src={onk} />
-        </Link>
+        <a href="https://khurtinv.netlify.app/">
+          <Icon src={vskh} />
+        </a>
 
         <Card>
           <CardText>
-            <p
+            <h2
               style={{
                 color: `#ffffff`,
                 textTransform: `uppercase`,
+                fontSize: `1.5rem`,
               }}
             >
-              Создание PWA приложения
-            </p>
+              Создание сайта
+            </h2>
             <ul
               style={{
                 color: `#ffffff`,
@@ -67,29 +68,29 @@ const Recent = (props) => {
                 fontWeight: `300`,
               }}
             >
-              <li>Gatsby JS, TypeScript</li>
-              <li>CMS - Wordpress </li>
-              <li>Google Maps</li>
-              <li>PWA</li>
+              <li>React JS, Gatsby JS </li>
+              <li>Styled Components, Contentful CMS</li>
+              <li>Aдаптивная верстка </li>
             </ul>
           </CardText>
-          <Link to="https://mystifying-snyder-a361aa.netlify.app/">
+          <a href="https://khurtinv.netlify.app/">
             <CardButton
               style={{
                 border: `1px solid #ffffff`,
+                padding: `0.7rem `,
                 color: `#ffffff`,
               }}
             >
               Подробнее
             </CardButton>
-          </Link>
+          </a>
         </Card>
       </CardWrapper>
 
       <CardWrapper>
-        <Link to="https://citronium.ru/case/lukojl/">
+        <a href="https://citronium.ru/case/lukojl/">
           <Icon src={luk} />
-        </Link>
+        </a>
 
         <Card>
           <CardText>
@@ -113,7 +114,7 @@ const Recent = (props) => {
               <li>Aдаптивная верстка </li>
             </ul>
           </CardText>
-          <Link to="https://citronium.ru/case/lukojl/">
+          <a href="https://citronium.ru/case/lukojl/">
             <CardButton
               style={{
                 border: `1px solid #ffffff`,
@@ -123,13 +124,13 @@ const Recent = (props) => {
             >
               Подробнее
             </CardButton>
-          </Link>
+          </a>
         </Card>
       </CardWrapper>
-      <CardWrapper >
-        <Link to="https://www.webpageperformance.ru/">
+      <CardWrapper>
+        <a href="https://www.webpageperformance.ru/">
           <Icon src={webpage} />
-        </Link>
+        </a>
 
         <Card>
           <CardText>
@@ -140,7 +141,7 @@ const Recent = (props) => {
                 fontSize: `1.5rem`,
               }}
             >
-              Верстка страницы
+              Верстка сайта
             </h2>
             <ul
               style={{
@@ -166,22 +167,22 @@ const Recent = (props) => {
           </Link>
         </Card>
       </CardWrapper>
-      <CardWrapper >
-        <Link to="https://khurtinv.netlify.app/">
-          <Icon src={vskh} />
-        </Link>
+
+      <CardWrapper>
+        <a href="https://mystifying-snyder-a361aa.netlify.app/">
+          <Icon src={onk} />
+        </a>
 
         <Card>
           <CardText>
-            <h2
+            <p
               style={{
                 color: `#ffffff`,
                 textTransform: `uppercase`,
-                fontSize: `1.5rem`,
               }}
             >
-              Создание сайта
-            </h2>
+              Создание PWA приложения
+            </p>
             <ul
               style={{
                 color: `#ffffff`,
@@ -189,22 +190,22 @@ const Recent = (props) => {
                 fontWeight: `300`,
               }}
             >
-              <li>React JS, Gatsby JS </li>
-              <li>Styled Components, Contentful CMS</li>
-              <li>Aдаптивная верстка </li>
+              <li>Gatsby JS, TypeScript</li>
+              <li>CMS - Wordpress </li>
+              <li>Google Maps</li>
+              <li>PWA</li>
             </ul>
           </CardText>
-          <Link to="https://www.webpageperformance.ru/">
+          <a href="https://mystifying-snyder-a361aa.netlify.app/">
             <CardButton
               style={{
                 border: `1px solid #ffffff`,
-                padding: `0.7rem `,
                 color: `#ffffff`,
               }}
             >
               Подробнее
             </CardButton>
-          </Link>
+          </a>
         </Card>
       </CardWrapper>
 

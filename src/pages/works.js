@@ -46,26 +46,26 @@ const Works = () => (
 
       <CardWrapper>
         <Card>
-          <Link to="https://citronium.ru/case/lukojl/">
+          <a href="https://citronium.ru/case/lukojl/">
             <Icon src={luk} />
-          </Link>
+          </a>
         </Card>
         <Card>
-          <Link to="https://www.webpageperformance.ru/">
+          <a href="https://www.webpageperformance.ru/">
             <Icon src={webpage} />
-          </Link>
+          </a>
         </Card>
       </CardWrapper>
       <CardWrapper>
         <Card>
-          <Link to="https://citronium.ru/case/swipewise/">
+          <a href="https://citronium.ru/case/swipewise/">
             <Icon src={swipe} />
-          </Link>
+          </a>
         </Card>
         <Card>
-          <Link to="https://citronium.ru/case/fizionom-new/">
+          <a href="https://citronium.ru/case/fizionom-new/">
             <Icon src={fizionom} />
-          </Link>
+          </a>
         </Card>
       </CardWrapper>
       <HeaderWrapper>
@@ -81,28 +81,28 @@ const Works = () => (
 
       <CardWrapper>
         <Card>
-          <Link to="https://khurtinv.netlify.app/">
+          <a href="https://khurtinv.netlify.app/">
             <Icon src={vskh} />
-          </Link>
+          </a>
         </Card>
 
         <Card>
-          <Link to="https://manandlaw.info/">
+          <a href="https://manandlaw.info/">
             <Icon src={manlaw} />
-          </Link>
+          </a>
         </Card>
       </CardWrapper>
 
       <CardWrapper>
         <Card>
-          <Link to="http://dentalstudia12.ru/">
+          <a href="http://dentalstudia12.ru/">
             <Icon src={dental} />
-          </Link>
+          </a>
         </Card>
         <Card>
-          <Link to="https://mystifying-snyder-a361aa.netlify.app/">
+          <a href="https://mystifying-snyder-a361aa.netlify.app/">
             <Icon src={onk} />
-          </Link>
+          </a>
         </Card>
       </CardWrapper>
     </WorksWrapper>
