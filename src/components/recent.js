@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import onk from "../images/onk.png"
 import webpage from "../images/webpage.png"
 import luk from "../images/luk.png"
+import vskh from "../images/vskh.jpg"
 
 const RecentWrapper = tw.div`
 w-full
@@ -125,7 +126,7 @@ const Recent = (props) => {
           </Link>
         </Card>
       </CardWrapper>
-      <CardWrapper style={{ gridGap: `3.55em` }}>
+      <CardWrapper >
         <Link to="https://www.webpageperformance.ru/">
           <Icon src={webpage} />
         </Link>
@@ -149,6 +150,47 @@ const Recent = (props) => {
               }}
             >
               <li>HTML, CSS, JQuery</li>
+              <li>Aдаптивная верстка </li>
+            </ul>
+          </CardText>
+          <Link to="https://www.webpageperformance.ru/">
+            <CardButton
+              style={{
+                border: `1px solid #ffffff`,
+                padding: `0.7rem `,
+                color: `#ffffff`,
+              }}
+            >
+              Подробнее
+            </CardButton>
+          </Link>
+        </Card>
+      </CardWrapper>
+      <CardWrapper >
+        <Link to="https://khurtinv.netlify.app/">
+          <Icon src={vskh} />
+        </Link>
+
+        <Card>
+          <CardText>
+            <h2
+              style={{
+                color: `#ffffff`,
+                textTransform: `uppercase`,
+                fontSize: `1.5rem`,
+              }}
+            >
+              Создание сайта
+            </h2>
+            <ul
+              style={{
+                color: `#ffffff`,
+                marginTop: `1.5rem`,
+                fontWeight: `300`,
+              }}
+            >
+              <li>React JS, Gatsby JS </li>
+              <li>Styled Components, Contentful CMS</li>
               <li>Aдаптивная верстка </li>
             </ul>
           </CardText>

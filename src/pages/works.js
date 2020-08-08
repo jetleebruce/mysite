@@ -12,6 +12,7 @@ import fizionom from "../images/fizionom.png"
 import onk from "../images/onk.png"
 import manlaw from "../images/manlaw.png"
 import dental from "../images/dental.png"
+import vskh from "../images/vskh.jpg"
 
 const WorksWrapper = tw.div`
 flex w-full flex-col
@@ -80,10 +81,11 @@ const Works = () => (
 
       <CardWrapper>
         <Card>
-          <Link to="https://mystifying-snyder-a361aa.netlify.app/">
-            <Icon src={onk} />
+          <Link to="https://khurtinv.netlify.app/">
+            <Icon src={vskh} />
           </Link>
         </Card>
+
         <Card>
           <Link to="https://manandlaw.info/">
             <Icon src={manlaw} />
@@ -98,8 +100,8 @@ const Works = () => (
           </Link>
         </Card>
         <Card>
-          <Link to="https://manandlaw.info/">
-            <Icon src={manlaw} />
+          <Link to="https://mystifying-snyder-a361aa.netlify.app/">
+            <Icon src={onk} />
           </Link>
         </Card>
       </CardWrapper>

@@ -8,6 +8,7 @@ import githubIcon from "../images/github.png"
 import gatsby from "../images/gatsbyjs.png"
 import js from "../images/jss.svg"
 
+
 const HeroWrapper = tw.div`
  w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xl:h-screen
 `
@@ -98,10 +99,10 @@ const Hero = () => {
           <Link to="https://github.com/jetleebruce">
             <Icon
               style={{
-                width: `9rem`,
+                width: `4rem`,
               }}
-              transition={{ ease: "easeOut", duration: 0.4 }}
-              animate={{ scale: 0.5 }}
+              animate={{ opacity: [0, 0, 0, 1] }}
+              transition={{ duration: 4, ease: "linear" }}
               src={githubIcon}
             />
           </Link>
