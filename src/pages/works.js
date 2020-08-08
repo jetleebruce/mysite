@@ -29,10 +29,23 @@ const Card = tw.div`
 const Icon = tw(motion.img)`
    
 `
+const BackButtonWrapper = tw.div`
+pt-8 pl-12 
+`
+
+const BackButton = tw.button`
+bg-transparent p-4 w-24 hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded
+`
 
 const Works = () => (
   <Layout>
     <WorksWrapper style={{ backgroundColor: `#141414` }}>
+      <BackButtonWrapper>
+        <BackButton>
+          <Link to="/">назад</Link>
+        </BackButton>
+      </BackButtonWrapper>
+
       <HeaderWrapper>
         <h2
           style={{
