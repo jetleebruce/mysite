@@ -10,13 +10,13 @@ import js from "../images/jss.svg"
 
 
 const HeroWrapper = tw.div`
- w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xl:h-screen
+ w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:h-screen xl:grid-cols-2 xl:h-screen
 `
 const ColR = tw.div`
 pt-16 p-0 
 `
 const ColL = tw.div`
-flex items-center flex-col pt-16 sm:pt-16 md:pt-24 lg:pt-32 xl:pt-48
+flex items-center flex-col pt-24 sm:pt-24 md:pt-24 lg:pt-64 xl:pt-64
 `
 const TextHeroWrapper = tw.div`
 m-0 

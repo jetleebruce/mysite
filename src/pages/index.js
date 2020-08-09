@@ -55,7 +55,20 @@ import Techs from "../components/techs"
 // `
 
 const FormWrapper = tw.div`
-p-8
+w-full justify-center 
+`
+const Form = tw.form`
+p-16 px-48 flex flex-col
+`
+const FormLabel = tw.label`
+pr-4 text-white
+`
+const FormInput = tw.input`
+h-12
+`
+
+const HeaderWrapper = tw.div`
+w-full flex justify-center text-3xl pt-12 pb-8 gap-4 lg:gap-12 xl:gap-12
 `
 
 const Home = () => {
@@ -95,35 +108,51 @@ const Home = () => {
         <Hero />
         <Recent />
         <Techs />
-        <FormWrapper>
-          <form
+        <HeaderWrapper
+          style={{
+            color: `#ffffff`,
+            textTransform: `uppercase`,
+            backgroundColor: `#141414`,
+          }}
+        >
+          Связь
+        </HeaderWrapper>
+        <FormWrapper
+          style={{
+            backgroundColor: `#141414`,
+            margin: `0 auto 0 auto`,
+            padding: `0 1.0875rem 6rem`,
+            position: `relative`,
+          }}
+        >
+          <Form
             onSubmit={handleSubmit}
             name="contact"
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="contact" />
-            <label htmlFor="name">Name</label>
-            <input
+            <FormInput type="hidden" name="form-name" value="contact" />
+            <FormLabel htmlFor="name">Имя</FormLabel>
+            <FormInput
               id="name"
               type="text"
               name="name"
               onChange={handleChange}
               value={formState.name}
-              placeholder="Enter your name"
+              placeholder="Представьтесь, пожалуйста!"
             />
-            <label htmlFor="email">Email</label>
-            <input
+            <FormLabel htmlFor="email">Email</FormLabel>
+            <FormInput
               id="email"
               type="email"
               name="email"
               onChange={handleChange}
               value={formState.email}
-              placeholder="Enter your email"
+              placeholder="Ваш email"
             />
             <button type="submit">Submit</button>
-          </form>
+          </Form>
         </FormWrapper>
         {/* <Wrapper> 
     <SEO title="Home" />

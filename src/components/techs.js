@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import tw from "twin.macro"
 import { motion } from "framer-motion"
 
-import gif from "../images/3.gif"
+import gif from "../images/3.mp4"
 
 const TechsWrapper = tw.div`
 w-full 
@@ -18,7 +18,7 @@ w-full grid grid-cols-1 gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-12
 const Card = tw.div`
  rounded overflow-hidden 
 `
-const Icon = tw(motion.img)`
+const Icon = tw.video`
    
 `
 const CardText = tw.div`
@@ -47,10 +47,9 @@ const Techs = () => (
       </h2>
     </HeaderWrapper>
     <CardWrapper>
-      <Link to="https://citronium.ru/case/lukojl/">
-        <Icon src={gif} />
-      </Link>
-
+      <Icon autoPlay loop playsInline>
+        <source src={gif} type="video/mp4" />
+      </Icon>
       <Card>
         <CardText>
           <h2
