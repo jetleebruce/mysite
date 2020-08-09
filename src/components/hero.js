@@ -4,13 +4,14 @@ import tw from "twin.macro"
 import { motion } from "framer-motion"
 
 import reactIcon from "../images/react.png"
-import githubIcon from "../images/github.png"
+import githubIcon from "../images/github2.png"
 import gatsby from "../images/gatsbyjs.png"
 import js from "../images/jss.svg"
-
+import whatsapp from '../images/whatsapp.png'
+import telegram from '../images/telegram.png'
 
 const HeroWrapper = tw.div`
- w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:h-screen xl:grid-cols-2 xl:h-screen
+ w-full py-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:h-screen xl:grid-cols-2 xl:h-screen
 `
 const ColR = tw.div`
 pt-16 p-0 
@@ -33,6 +34,10 @@ const TextQuote = tw(
 const TextSub = tw(motion.p)`
 pt-6 pb-2 w-full flex justify-center
 `
+const IconWrapper = tw.div`
+flex flex-row w-48 py-8 justify-center justify-around
+`
+
 const Icon = tw(motion.img)`
    
 `
@@ -92,21 +97,47 @@ const Hero = () => {
               fontWeight: `300`,
             }}
           >
-            In the process of non-stop learning.
+            JAMstack enthusiast
           </p>
         </TextQuote>
-        <IconGit>
-          <Link to="https://github.com/jetleebruce">
-            <Icon
-              style={{
-                width: `4rem`,
-              }}
-              animate={{ opacity: [0, 0, 0, 1] }}
-              transition={{ duration: 4, ease: "linear" }}
-              src={githubIcon}
-            />
-          </Link>
-        </IconGit>
+        <IconWrapper>
+          <IconGit>
+            <Link to="https://github.com/jetleebruce">
+              <Icon
+                style={{
+                  width: `3rem`,
+                }}
+                animate={{ opacity: [0, 0, 0, 1] }}
+                transition={{ duration: 4, ease: "linear" }}
+                src={githubIcon}
+              />
+            </Link>
+          </IconGit>
+          <IconGit>
+            <Link to="https://wapp.click/79050082028">
+              <Icon
+                style={{
+                  width: `3rem`,
+                }}
+                animate={{ opacity: [0, 0, 0, 1] }}
+                transition={{ duration: 4, ease: "linear" }}
+                src={whatsapp}
+              />
+            </Link>
+          </IconGit>
+          <IconGit>
+            <Link to="https://tlgg.ru/jetleebruce">
+              <Icon
+                style={{
+                  width: `3rem`,
+                }}
+                animate={{ opacity: [0, 0, 0, 1] }}
+                transition={{ duration: 4, ease: "linear" }}
+                src={telegram}
+              />
+            </Link>
+          </IconGit>
+        </IconWrapper>
       </ColL>
       <ColR style={{ display: `flex`, flexDirection: `row` }}>
         <LogosWrapper>

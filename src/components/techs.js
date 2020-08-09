@@ -47,7 +47,7 @@ const Techs = () => (
       </h2>
     </HeaderWrapper>
     <CardWrapper>
-      <Icon autoPlay loop playsInline>
+      <Icon autoPlay loop muted>
         <source src={gif} type="video/mp4" />
       </Icon>
       <Card>

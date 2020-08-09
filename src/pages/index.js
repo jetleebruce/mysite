@@ -7,64 +7,25 @@ import Hero from "../components/hero"
 import Recent from "../components/recent"
 import Techs from "../components/techs"
 
-// const logos = [
-//   {
-//     name: "gatsby",
-//     logo: require("../images/gatsby.svg"),
-//   },
-//   {
-//     name: "tailwind",
-//     logo: require("../images/tailwind.svg"),
-//   },
-//   {
-//     name: "emotion",
-//     logo: require("../images/emotion.png"),
-//   },
-// ]
-
-// const Wrapper = tw.div`
-//   flex items-center justify-center flex-col h-screen
-// `
-
-// const Main = tw.div`
-//   p-6 bg-gray-100 rounded-lg shadow-2xl
-// `
-
-// const Heading = tw.h1`
-//   text-2xl text-gray-500 uppercase
-// `
-
-// const Text = tw.p`
-//   text-xl text-gray-700
-// `
-
-// const Logos = tw.div`
-//   flex items-center justify-around mb-6 px-16
-// `
-
-// const Icon = tw.img`
-//   h-10
-// `
-
-// const Footer = tw.footer`
-//   mt-6 text-center
-// `
-
-// const SmallIcon = tw.img`
-//   inline-block h-6
-// `
+//Form styles
 
 const FormWrapper = tw.div`
-w-full justify-center 
+w-full justify-center px-12 sm:px-16 md:px-20 lg:px-32 xl:px-64
 `
 const Form = tw.form`
-p-16 px-48 flex flex-col
+ flex flex-col 
 `
 const FormLabel = tw.label`
-pr-4 text-white
+pb-4 pt-4 text-white
 `
 const FormInput = tw.input`
-h-12
+h-12 pl-8
+`
+const FormButtonWrapper = tw.div`
+flex justify-center py-16
+`
+const FormButton = tw.button`
+bg-transparent w-48 hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded
 `
 
 const HeaderWrapper = tw.div`
@@ -120,9 +81,8 @@ const Home = () => {
         <FormWrapper
           style={{
             backgroundColor: `#141414`,
-            margin: `0 auto 0 auto`,
-            padding: `0 1.0875rem 6rem`,
-            position: `relative`,
+            // margin: `0 auto 0 auto`,
+            
           }}
         >
           <Form
@@ -151,7 +111,9 @@ const Home = () => {
               value={formState.email}
               placeholder="Ваш email"
             />
-            <button type="submit">Submit</button>
+            <FormButtonWrapper>
+              <FormButton type="submit">Отправить</FormButton>
+            </FormButtonWrapper>
           </Form>
         </FormWrapper>
         {/* <Wrapper> 
