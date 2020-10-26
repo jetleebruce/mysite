@@ -7,6 +7,8 @@ import onk from "../images/onk.png"
 import webpage from "../images/webpage.png"
 import luk from "../images/luk.png"
 import vskh from "../images/vskh.jpg"
+import fs from "../images/fs.jpg"
+import chat from "../images/chat.png"
 
 const RecentWrapper = tw.div`
 w-full
@@ -46,7 +48,50 @@ const Recent = (props) => {
       </HeaderWrapper>
 
       <CardWrapper>
-        <a href="https://khurtinv.netlify.app/">
+        <a href="https://fs-tech.ru/">
+          <Icon src={fs} />
+        </a>
+
+        <Card>
+          <CardText>
+            <h2
+              style={{
+                color: `#ffffff`,
+                textTransform: `uppercase`,
+                fontSize: `1.5rem`,
+              }}
+            >
+              Создание сайта
+            </h2>
+            <ul
+              style={{
+                color: `#ffffff`,
+                marginTop: `1.5rem`,
+                fontWeight: `300`,
+              }}
+            >
+              <li>React JS, Gatsby JS </li>
+              <li>Styled Components + Tailwind </li>
+              <li>Contentful CMS</li>
+              <li>Aдаптивная верстка </li>
+            </ul>
+          </CardText>
+          <a href="https://fs-tech.ru/">
+            <CardButton
+              style={{
+                border: `1px solid #ffffff`,
+                padding: `0.7rem `,
+                color: `#ffffff`,
+              }}
+            >
+              Подробнее
+            </CardButton>
+          </a>
+        </Card>
+      </CardWrapper>
+
+      <CardWrapper>
+        <a href="https://vshrt.netlify.app/">
           <Icon src={vskh} />
         </a>
 
@@ -73,7 +118,48 @@ const Recent = (props) => {
               <li>Aдаптивная верстка </li>
             </ul>
           </CardText>
-          <a href="https://khurtinv.netlify.app/">
+          <a href="https://vshrt.netlify.app/">
+            <CardButton
+              style={{
+                border: `1px solid #ffffff`,
+                padding: `0.7rem `,
+                color: `#ffffff`,
+              }}
+            >
+              Подробнее
+            </CardButton>
+          </a>
+        </Card>
+      </CardWrapper>
+
+      <CardWrapper>
+        <a href="https://chattyappwhatsapp.netlify.app/">
+          <Icon src={chat} />
+        </a>
+
+        <Card>
+          <CardText>
+            <h2
+              style={{
+                color: `#ffffff`,
+                textTransform: `uppercase`,
+                fontSize: `1.5rem`,
+              }}
+            >
+              Whatsapp Clone
+            </h2>
+            <ul
+              style={{
+                color: `#ffffff`,
+                marginTop: `1.5rem`,
+                fontWeight: `300`,
+              }}
+            >
+              <li>React JS</li>
+              <li>Firebase</li>
+            </ul>
+          </CardText>
+          <a href="https://chattyappwhatsapp.netlify.app/">
             <CardButton
               style={{
                 border: `1px solid #ffffff`,
