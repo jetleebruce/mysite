@@ -10,7 +10,7 @@ import Techs from "../components/techs"
 //Form styles
 
 const FormWrapper = tw.div`
-w-full justify-center px-12 sm:px-16 md:px-20 lg:px-32 xl:px-64
+container mx-auto px-12 sm:px-16 md:px-20 lg:px-32 xl:px-64
 `
 const Form = tw.form`
  flex flex-col 
@@ -82,7 +82,6 @@ const Home = () => {
           style={{
             backgroundColor: `#141414`,
             // margin: `0 auto 0 auto`,
-            
           }}
         >
           <Form

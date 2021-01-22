@@ -15,7 +15,7 @@ import dental from "../images/dental.png"
 import vskh from "../images/vskh.jpg"
 
 const WorksWrapper = tw.div`
-flex w-full flex-col
+container mx-auto flex flex-col
 `
 const HeaderWrapper = tw.div`
 w-full flex justify-center pb-8 pt-8 text-3xl

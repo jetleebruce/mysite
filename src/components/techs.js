@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import gif from "../images/3.mp4"
 
 const TechsWrapper = tw.div`
-w-full 
+container mx-auto 
 `
 const HeaderWrapper = tw.div`
 w-full flex justify-center text-3xl pb-16
