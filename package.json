@@ -1,6 +1,6 @@
 {
-  "name": "@pauloelias/gatsby-tailwind-emotion-starter",
-  "description": "A bare-bones Tailwind CSS + Emotion starter for Gatsby",
+  "name": "@jetleebruce/mysite",
+  "description": "Модин Сергей разработка сайтов",
   "version": "2.1.0",
   "license": "MIT",
   "scripts": {
@@ -35,9 +35,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pauloelias/gatsby-tailwind-emotion-starter"
+    "url": "https://github.com/jetleebruce"
   },
   "bugs": {
-    "url": "https://github.com/pauloelias/gatsby-tailwind-emotion-starter/issues"
+    "url": "https://github.com/jetleebruce/mysite/issues"
   }
 }
