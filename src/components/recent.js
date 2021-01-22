@@ -11,7 +11,7 @@ import fs from "../images/fs.jpg"
 import chat from "../images/chat.png"
 
 const RecentWrapper = tw.div`
-w-full
+container mx-auto
 `
 const HeaderWrapper = tw.div`
 w-full flex justify-center text-3xl pt-12 pb-8 gap-4 lg:gap-12 xl:gap-12
